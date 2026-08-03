@@ -2,7 +2,7 @@ import Navbar from "./components/Navibar";
 import "./App.css";
 import { Link } from "react-router-dom";
 import resolveLogo from "./assets/Resolve'26.png";
-import resolveposter from "./assets/resolve'26-Poster.jpeg";
+import resolveposter from "./assets/resolve'26-poster.jpeg";
 function App() {
   return (
     <>
