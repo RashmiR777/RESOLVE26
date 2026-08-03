@@ -67,7 +67,7 @@ function Navbar() {
         <a
           href="#home"
           style={{
-            color: "#000",
+            color: "#fff",
             textDecoration: "none",
             fontWeight: "600",
             transition: "0.3s",
@@ -79,7 +79,7 @@ function Navbar() {
         <a
           href="#about"
           style={{
-            color: "#000",
+            color: "#fff",
             textDecoration: "none",
             fontWeight: "600",
             transition: "0.3s",
@@ -91,7 +91,7 @@ function Navbar() {
         <a
           href="#timeline"
           style={{
-            color: "#000",
+            color: "#fff",
             textDecoration: "none",
             fontWeight: "600",
             transition: "0.3s",
@@ -100,12 +100,18 @@ function Navbar() {
           Timeline
         </a>
 
-        
+        {/*im going to comment this link to the website btw jsx comments are so weird<a className="btn btn-primary" href="https://q.me-qr.com/jmlr762q" target="_blank" rel="noopener noreferrer" style={{
+            color: "#fff",
+            textDecoration: "none",
+            fontWeight: "600",
+            transition: "0.3s",>
+Register Now </a>
+*/}
 
         <Link
           to="/register"
           style={{
-            color: "#000",
+            color: "#fff",
             textDecoration: "none",
             fontWeight: "600",
             transition: "0.3s",
@@ -117,7 +123,7 @@ function Navbar() {
         <a
           href="#contact"
           style={{
-            color: "#000",
+            color: "#fff",
             textDecoration: "none",
             fontWeight: "600",
             transition: "0.3s",
