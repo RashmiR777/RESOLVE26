@@ -1,6 +1,7 @@
 import Navbar from "./components/Navibar";
 import "./App.css";
 import { Link } from "react-router-dom";
+import resolveLogo from "./assets/Resolve'26.png";
 function App() {
   return (
     <>
@@ -10,8 +11,11 @@ function App() {
         <div className="hero-panel">
           <p className="eyebrow">2-Day National Game Jam</p>
 
-          <h1>RESOLVE '26</h1>
-
+          <img
+  src={resolveLogo}
+  alt="RESOLVE '26"
+  className="resolve-logo"
+/>
           <p className="hero-copy">
             SRM Institute of Science and Technology • Vadapalani Campus
           </p>
@@ -91,19 +95,23 @@ function App() {
 </Link>
 
   <div className="footer-contact">
-    <p>
-      <strong>Faculty Coordinator</strong>
-      <br />
-      Dr. Sridevi Sridhar
-    </p>
+    <div className="footer-box">
+      <p>
+        <strong>Faculty Coordinator</strong>
+        <br />
+        Dr. Sridevi Sridhar
+      </p>
+    </div>
 
-    <p>
-      <strong>Student Coordinators</strong>
-      <br />
-      Netrang Davey • 99406 88427
-      <br />
-      Shravan Chumble • 78238 44791
-    </p>
+    <div className="footer-box">
+      <p>
+        <strong>Student Coordinators</strong>
+        <br />
+        Netrang Davey • 99406 88427
+        <br />
+        Shravan Chumble • 78238 44791
+      </p>
+    </div>
   </div>
 </footer>
     </>

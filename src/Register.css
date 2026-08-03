@@ -7,56 +7,114 @@
 
   background: url("./assets/background.jpg") center/cover no-repeat fixed;
 }
+
 .register-box {
   width: 100%;
   max-width: 650px;
   padding: 50px;
-  background: rgba(20, 20, 40, 0.8);
-  backdrop-filter: blur(10px);
-  border-radius: 20px;
-  border: 2px solid #b46eff;
+
+  background: rgba(51, 15, 83, 0.22);
+  backdrop-filter: blur(12px);
+
+  border: 4px solid rgba(255, 255, 255, 0.75);
+  border-radius: 0;
+
+  box-shadow:
+    6px 6px 0 #220a39,
+    12px 12px 0 rgba(0,0,0,.35);
 }
+
 .register-box h1 {
   text-align: center;
   margin-bottom: 35px;
   color: white;
+  font-family: "Black Ops One", system-ui;
+  font-size: 42px;
 }
+
 .register-form {
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 20px;
 }
+
 .register-form input {
   width: 100%;
   padding: 16px 20px;
-  background: rgba(255,255,255,0.08);
-  border: 2px solid #b46eff;
-  border-radius: 10px;
+
+  background: rgba(51,15,83,.35);
+  backdrop-filter: blur(8px);
+
+  border: 2px solid white;
+  border-radius: 0;
+
   color: white;
   font-size: 16px;
+  font-family: "Pixelify Sans", sans-serif;
+
   outline: none;
-  transition: 0.25s;
+
+  box-shadow:
+    3px 3px 0 #2d0f52;
+
+  transition: .2s;
 }
+
 .register-form input::placeholder {
-  color: rgba(255,255,255,0.65);
+  color: rgba(255,255,255,.65);
 }
+
 .register-form input:focus {
+  transform: translate(-2px,-2px);
+
   border-color: white;
-  box-shadow: 0 0 15px #b46eff;
+
+  box-shadow:
+    5px 5px 0 #2d0f52;
 }
+
 .register-form button {
   margin-top: 20px;
   padding: 16px;
-  border: none;
-  border-radius: 10px;
-  background: #824dff;
-  color: black;
+
+  background: rgba(51,15,83,.35);
+  color: white;
+
+  border: 2px solid white;
+  border-radius: 0;
+
+  font-family: "Pixelify Sans", sans-serif;
   font-size: 18px;
   font-weight: bold;
+
   cursor: pointer;
-  transition: 0.25s;
+
+  box-shadow:
+    3px 3px 0 #2d0f52;
+
+  transition: .2s;
 }
+
 .register-form button:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 0 20px #9d4dff;
+  transform: translate(-2px,-2px);
+
+  box-shadow:
+    5px 5px 0 #2d0f52;
+}
+
+.register-form button:active {
+  transform: translate(1px,1px);
+
+  box-shadow:
+    1px 1px 0 #2d0f52;
+}
+
+@media (max-width: 700px) {
+  .register-box {
+    padding: 30px;
+  }
+
+  .register-box h1 {
+    font-size: 32px;
+  }
 }

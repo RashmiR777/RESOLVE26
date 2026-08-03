@@ -20,17 +20,18 @@ function Navbar() {
         backdropFilter: "blur(15px)",
         WebkitBackdropFilter: "blur(15px)",
 
-        borderRadius: "25px",
+        borderRadius: "0",
 
-        border: "1px solid rgba(198, 170, 255, 0.7)",
+        border: "4px solid rgba(255,255,255,0.8)",
 
-        boxShadow:
-          "0 0 20px rgba(72, 0, 255, 0.45), 0 0 45px rgba(68, 0, 255, 0.25)",
-
+        boxShadow: `
+4px 4px 0 rgba(40,0,70,0.9),
+8px 8px 0 rgba(20,0,40,0.5)
+`,
         color: "black",
       }}
     >
-      {/* Left Side */}
+      
       <div
         style={{
           display: "flex",
@@ -47,7 +48,7 @@ function Navbar() {
         <h2
           style={{
             margin: 0,
-            fontSize: "30px",
+            fontSize: "50px",
             color: "#000",
           }}
         >
@@ -55,12 +56,12 @@ function Navbar() {
         </h2>
       </div>
 
-      {/* Right Side */}
       <div
         style={{
           display: "flex",
           gap: "30px",
           alignItems: "center",
+          fontSize:"20px",
         }}
       >
         <a
