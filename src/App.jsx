@@ -28,12 +28,13 @@ function App() {
           </div>
 
           <div className="hero-actions">
-            {/*im going to comment this link to the website btw jsx comments are so weird<a className="btn btn-primary" href="https://q.me-qr.com/jmlr762q" target="_blank" rel="noopener noreferrer">
+            {/*im going to comment this link to the website btw jsx comments are so weird*/}
+            <a className="btn btn-primary" href="https://q.me-qr.com/jmlr762q" target="_blank" rel="noopener noreferrer">
 Register Now </a>
-*/}
-            <Link className="btn btn-primary" to="/register">
+
+            {/*<Link className="btn btn-primary" to="/register">
               Register Now
-            </Link>
+            </Link>*/}
 
             <a className="btn btn-secondary" href="#about">
               Learn More
@@ -46,7 +47,7 @@ Register Now </a>
       <section id="about" className="section">
   <h2>About RESOLVE</h2>
   
-  {/* Flex container forcing side-by-side layout */}
+  
   <div style={{ display: "flex", alignItems: "center", gap: "24px" }}>
     
     <img 
@@ -55,7 +56,7 @@ Register Now </a>
       className="resolve-poster" 
       width="250" 
       height="350"
-      style={{ display: "block", flexShrink: 0 }} // Prevents image from squishing
+      style={{ display: "block", flexShrink: 0 }} 
     />
     
     <div style={{ textAlign: "left", fontSize: "30px" }}>
@@ -189,12 +190,13 @@ Register Now </a>
 
       <footer id="contact" className="footer">
   <h2>Ready to Join?</h2>
-{/*im going to comment this link to the website btw jsx comments are so weird<a className="btn btn-primary" href="https://q.me-qr.com/jmlr762q" target="_blank" rel="noopener noreferrer">
+{/*im going to comment this link to the website btw jsx comments are so weird*/}
+<a className="btn btn-primary" href="https://q.me-qr.com/jmlr762q" target="_blank" rel="noopener noreferrer">
 Register Now </a>
-*/}
-  <Link className="btn btn-primary" to="/register">
+
+  {/*<Link className="btn btn-primary" to="/register">
   Register Now
-</Link>
+</Link>*/}
 
   <div className="footer-contact">
     <div className="footer-box">

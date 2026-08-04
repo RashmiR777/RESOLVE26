@@ -100,15 +100,24 @@ function Navbar() {
           Timeline
         </a>
 
-        {/*im going to comment this link to the website btw jsx comments are so weird<a className="btn btn-primary" href="https://q.me-qr.com/jmlr762q" target="_blank" rel="noopener noreferrer" style={{
+        {/*im going to comment this link to the website btw jsx comments are so weird*/}
+        <Link
+          className="btn btn-primary"
+          to="https://q.me-qr.com/jmlr762q"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
             color: "#fff",
             textDecoration: "none",
             fontWeight: "600",
-            transition: "0.3s",>
-Register Now </a>
-*/}
+            transition: "0.3s",
+          }}
+        >
+          Register Now
+        </Link>
 
-        <Link
+
+        {/*<Link
           to="/register"
           style={{
             color: "#fff",
@@ -118,10 +127,9 @@ Register Now </a>
           }}
         >
           Register
-        </Link>
+        </Link>*/}
 
-        <a
-          href="#contact"
+        <a href="#contact"
           style={{
             color: "#fff",
             textDecoration: "none",
