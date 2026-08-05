@@ -172,10 +172,13 @@ color:#e9d5ff;
 .timeline-visual {
   position: relative;
   display: grid;
-  grid-template-columns: 1fr 120px 1fr;
-  gap: 22px;
+  --timeline-center: 120px;
+  --timeline-gap: 22px;
+  grid-template-columns: 1fr var(--timeline-center) 1fr;
+  gap: var(--timeline-gap);
   align-items: center;
   margin-top: 35px;
+  z-index: 0; /* create a stacking context so the line can be placed behind */
 }
 
 /* keep timeline content inset from the section edges to avoid overflow */
@@ -192,6 +195,7 @@ color:#e9d5ff;
   width: 4px;
   background: #7a3ddb;
   opacity: 0.65;
+  z-index: -1; /* keep the vertical line behind timeline children */
 }
 
 .timeline-row {
@@ -212,7 +216,7 @@ color:#e9d5ff;
 
 .timeline-day-card{
 position:relative;
-z-index:2;
+z-index:6;
 
 width:clamp(70px,10vw,120px);
 aspect-ratio:1/1.25;
@@ -230,7 +234,6 @@ border:4px solid rgba(255,255,255,.95);
 
 box-shadow:8px 8px 0 #2d0f52;
 justify-self:center;
-z-index:3;
 }
 
 .timeline-day-card::before,
@@ -282,25 +285,27 @@ white-space:nowrap;
 /* Connecting Lines */
 
 .timeline-item-row.left .timeline-card::after{
-content:"";
-position:absolute;
-top:50%;
-right:-36px;
-transform:translateY(-50%);
-width:36px;
-height:2px;
-background:#fff;
+  content:"";
+  position:absolute;
+  top:50%;
+  /* place connector edge halfway into the center column (responsive via --timeline-center) */
+  right: calc((var(--timeline-center) + var(--timeline-gap)) / -2);
+  transform: translateY(-50%);
+  width: calc((var(--timeline-center) + var(--timeline-gap)) / 2 + 2px);
+  height: 2px;
+  background: #fff;
 }
 
 .timeline-item-row.right .timeline-card::before{
-content:"";
-position:absolute;
-top:50%;
-left:-36px;
-transform:translateY(-50%);
-width:36px;
-height:2px;
-background:#fff;
+  content: "";
+  position: absolute;
+  top: 50%;
+  /* mirror the left connector */
+  left: calc((var(--timeline-center) + var(--timeline-gap)) / -2);
+  transform: translateY(-50%);
+  width: calc((var(--timeline-center) + var(--timeline-gap)) / 2 + 2px);
+  height: 2px;
+  background: #fff;
 }
 
 /* Marker */
@@ -372,9 +377,11 @@ background:#fff;
 
 .timeline-visual{
 
-grid-template-columns:1fr 40px 1fr;
+  /* mobile: smaller center column */
+  --timeline-center: 40px;
+  --timeline-gap: 14px;
+  grid-template-columns:1fr var(--timeline-center) 1fr;
 
-gap:14px;
 
 }
 
