@@ -32,6 +32,10 @@ function App() {
             <a className="btn btn-primary" href="https://q.me-qr.com/jmlr762q" target="_blank" rel="noopener noreferrer">
 Register Now </a>
 
+            {/*<Link className="btn btn-primary" to="/register">
+              Register Now
+            </Link>*/}
+
             <a className="btn btn-secondary" href="#about">
               Learn More
             </a>
@@ -94,13 +98,19 @@ Register Now </a>
             <div className="timeline-side" />
             <div className="timeline-marker" />
             <div className="timeline-card">
-              <p>9:00AM • Launch & Mentoring</p>
+              <div className="timeline-content">
+                <strong>9:00 AM</strong>
+                <span>Launch & Mentoring</span>
+              </div>
             </div>
           </div>
 
           <div className="timeline-row timeline-item-row left">
             <div className="timeline-card">
-              <p>11:00AM - 2:00PM • Mentoring Sessions Start</p>
+              <div className="timeline-content">
+                <strong>11:00 AM – 2:00 PM</strong>
+                <span>Mentoring Sessions Start</span>
+              </div>
             </div>
             <div className="timeline-marker" />
             <div className="timeline-side" />
@@ -110,7 +120,10 @@ Register Now </a>
             <div className="timeline-side" />
             <div className="timeline-marker" />
             <div className="timeline-card">
-              <p>2:00PM - 5:00PM • Day 1 game development</p>
+              <div className="timeline-content">
+                <strong>2:00 PM – 5:00 PM</strong>
+                <span>Day 1 Game Development</span>
+              </div>
             </div>
           </div>
 
@@ -189,6 +202,10 @@ Register Now </a>
 {/*im going to comment this link to the website btw jsx comments are so weird*/}
 <a className="btn btn-primary" href="https://q.me-qr.com/jmlr762q" target="_blank" rel="noopener noreferrer">
 Register Now </a>
+
+  {/*<Link className="btn btn-primary" to="/register">
+  Register Now
+</Link>*/}
 
   <div className="footer-contact">
     <div className="footer-box">
