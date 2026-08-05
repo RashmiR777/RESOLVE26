@@ -1,9 +1,17 @@
 * {
   box-sizing: border-box;
 }
-.resolve-logo,
-.resolve-poster {
-  transition: transform 0.2s ease, filter 0.2s ease;
+.resolve-logo{
+  display:block;
+  width:min(700px,100%);
+  height:auto;
+  margin:20px auto;
+}
+
+.resolve-poster{
+  width:250px;
+  height:auto;
+  display:block;
 }
 
 .resolve-logo:hover,
@@ -113,6 +121,20 @@ flex-wrap:wrap;
 
     box-shadow:
         5px 5px 0 #2d0f52;
+}
+.about-content{
+  display:flex;
+  align-items:center;
+  gap:35px;
+}
+
+.about-text{
+  text-align:left;
+  font-size:28px;
+}
+
+.about-text p{
+  line-height:1.6;
 }
 .section {
   width: 90%;
@@ -334,6 +356,25 @@ padding:30px;
 padding:25px;
 }
 }
+/* Make sure register cards are centered and contained inside the section on small screens */
+@media (max-width: 700px) {
+  .register-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    width: 100%;
+    max-width: 520px; /* keep cards narrower than the section */
+    margin: 20px auto 0; /* center inside the section */
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .register-grid .card {
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+}
 .footer {
   width: 100%;
   margin-top: 120px;
@@ -412,6 +453,53 @@ padding:25px;
   }
 
   
+}
+/* Mobile: keep only the contact content and the top line inside the boxed area */
+@media (max-width: 700px) {
+  .footer {
+    background: transparent;
+    padding: 40px 20px;
+    border-top: none; /* move the visible top line into the boxed contact */
+  }
+
+  .footer-contact {
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 20px;
+    gap: 24px;
+    background: rgba(51, 15, 83, 0.14);
+    border: 2px solid rgba(255, 255, 255, 0.18);
+    border-top: 4px solid white; /* visible line stays inside this box */
+    box-shadow: none;
+    text-align: center;
+  }
+
+  .footer-box:first-child,
+  .footer-box:last-child {
+    text-align: center;
+  }
+}
+@media (max-width:768px){
+
+.about-content{
+    flex-direction:column;
+    text-align:center;
+}
+
+.about-text{
+    text-align:center;
+    font-size:18px;
+}
+
+.about-text span{
+    font-size:24px !important;
+}
+
+.resolve-poster{
+    width:220px;
+}
+
 }
 /*.hero-panel,
 .card,

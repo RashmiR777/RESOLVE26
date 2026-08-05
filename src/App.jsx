@@ -45,10 +45,10 @@ Register Now </a>
 
 
       <section id="about" className="section">
-  <h2>About RESOLVE</h2>
+  <h2 style={{marginBottom: 10}}>About RESOLVE</h2>
   
   
-  <div style={{ display: "flex", alignItems: "center", gap: "24px" }}>
+  <div className="about-content">
     
     <img 
       src={resolveposter} 
@@ -59,7 +59,7 @@ Register Now </a>
       style={{ display: "block", flexShrink: 0 }} 
     />
     
-    <div style={{ textAlign: "left", fontSize: "30px" }}>
+    <div className="about-text">
       <p>
         {" "}
   <span style={{
@@ -204,6 +204,8 @@ Register Now </a>
         <strong>Faculty Coordinator</strong>
         <br />
         Dr. Sridevi Sridhar
+        <br/>
+        Dr. Daniel
       </p>
     </div>
 
