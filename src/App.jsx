@@ -32,10 +32,6 @@ function App() {
             <a className="btn btn-primary" href="https://q.me-qr.com/jmlr762q" target="_blank" rel="noopener noreferrer">
 Register Now </a>
 
-            {/*<Link className="btn btn-primary" to="/register">
-              Register Now
-            </Link>*/}
-
             <a className="btn btn-secondary" href="#about">
               Learn More
             </a>
@@ -193,10 +189,6 @@ Register Now </a>
 {/*im going to comment this link to the website btw jsx comments are so weird*/}
 <a className="btn btn-primary" href="https://q.me-qr.com/jmlr762q" target="_blank" rel="noopener noreferrer">
 Register Now </a>
-
-  {/*<Link className="btn btn-primary" to="/register">
-  Register Now
-</Link>*/}
 
   <div className="footer-contact">
     <div className="footer-box">

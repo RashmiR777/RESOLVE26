@@ -356,25 +356,6 @@ padding:30px;
 padding:25px;
 }
 }
-/* Make sure register cards are centered and contained inside the section on small screens */
-@media (max-width: 700px) {
-  .register-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-    width: 100%;
-    max-width: 520px; /* keep cards narrower than the section */
-    margin: 20px auto 0; /* center inside the section */
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  .register-grid .card {
-    margin: 0;
-    width: 100%;
-    max-width: 100%;
-  }
-}
 .footer {
   width: 100%;
   margin-top: 120px;
