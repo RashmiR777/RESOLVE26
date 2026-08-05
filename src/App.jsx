@@ -89,7 +89,7 @@ Register Now </a>
             <div className="timeline-side" />
             <div className="timeline-day-card">
               <span>31</span>
-              <p>August 2026</p>
+              <p>Aug</p><p>2026</p>
             </div>
             <div className="timeline-side" />
           </div>
@@ -138,8 +138,8 @@ Register Now </a>
           <div className="timeline-row timeline-day-row">
             <div className="timeline-side" />
             <div className="timeline-day-card">
-              <span>1</span>
-              <p>September 2026</p>
+              <span>01</span>
+              <p>Sep</p> <p>2026</p>
             </div>
             <div className="timeline-side" />
           </div>
