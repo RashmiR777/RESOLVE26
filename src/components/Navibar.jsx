@@ -1,6 +1,18 @@
-import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
 
 function Navbar() {
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <nav
       style={{
@@ -8,8 +20,8 @@ function Navbar() {
         justifyContent: "space-between",
         alignItems: "center",
 
-        width: "calc(100% - 40px)",
-        padding: "15px 40px",
+        width: isMobile ? "calc(100% - 20px)" : "calc(100% - 40px)",
+        padding: isMobile ? "12px 18px" : "15px 40px",
         margin: "20px auto",
 
         position: "sticky",
@@ -20,35 +32,36 @@ function Navbar() {
         backdropFilter: "blur(15px)",
         WebkitBackdropFilter: "blur(15px)",
 
-        borderRadius: "0",
-
         border: "4px solid rgba(255,255,255,0.8)",
 
         boxShadow: `
-4px 4px 0 rgba(40,0,70,0.9),
-8px 8px 0 rgba(20,0,40,0.5)
-`,
+          4px 4px 0 rgba(40,0,70,0.9),
+          8px 8px 0 rgba(20,0,40,0.5)
+        `,
+
         color: "black",
       }}
     >
-      
+      {/* Logo */}
       <div
         style={{
           display: "flex",
           alignItems: "center",
-          gap: "12px",
+          gap: isMobile ? "8px" : "12px",
         }}
       >
         <img
           src="/favicon.jpeg"
           alt="DNS Logo"
-          style={{ height: "50px" }}
+          style={{
+            height: isMobile ? "36px" : "50px",
+          }}
         />
 
         <h2
           style={{
             margin: 0,
-            fontSize: "50px",
+            fontSize: isMobile ? "28px" : "50px",
             color: "#000",
           }}
         >
@@ -56,12 +69,14 @@ function Navbar() {
         </h2>
       </div>
 
+      {/* Links */}
       <div
         style={{
           display: "flex",
-          gap: "30px",
+          gap: isMobile ? "14px" : "30px",
           alignItems: "center",
-          fontSize:"20px",
+          fontSize: isMobile ? "15px" : "20px",
+          flexWrap: "wrap",
         }}
       >
         <a
@@ -70,7 +85,6 @@ function Navbar() {
             color: "#fff",
             textDecoration: "none",
             fontWeight: "600",
-            transition: "0.3s",
           }}
         >
           Home
@@ -82,7 +96,6 @@ function Navbar() {
             color: "#fff",
             textDecoration: "none",
             fontWeight: "600",
-            transition: "0.3s",
           }}
         >
           About
@@ -94,47 +107,30 @@ function Navbar() {
             color: "#fff",
             textDecoration: "none",
             fontWeight: "600",
-            transition: "0.3s",
           }}
         >
           Timeline
         </a>
 
-        {/*im going to comment this link to the website btw jsx comments are so weird*/}
-        <Link
-          className="btn btn-primary"
-          to="https://q.me-qr.com/jmlr762q"
+        <a
+          href="https://q.me-qr.com/jmlr762q"
           target="_blank"
           rel="noopener noreferrer"
           style={{
             color: "#fff",
             textDecoration: "none",
             fontWeight: "600",
-            transition: "0.3s",
           }}
         >
           Register Now
-        </Link>
+        </a>
 
-
-        {/*<Link
-          to="/register"
+        <a
+          href="#contact"
           style={{
             color: "#fff",
             textDecoration: "none",
             fontWeight: "600",
-            transition: "0.3s",
-          }}
-        >
-          Register
-        </Link>*/}
-
-        <a href="#contact"
-          style={{
-            color: "#fff",
-            textDecoration: "none",
-            fontWeight: "600",
-            transition: "0.3s",
           }}
         >
           Contact
