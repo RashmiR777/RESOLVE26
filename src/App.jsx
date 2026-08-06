@@ -133,7 +133,10 @@ Register Now </a>
 
           <div className="timeline-row timeline-item-row left">
             <div className="timeline-card">
-              <p>5:00PM • First Round</p>
+              <div className="timeline-content">
+                <strong>5:00 PM</strong>
+                <span>First Round</span>
+              </div>
             </div>
             <div className="timeline-marker" />
             <div className="timeline-side" />
@@ -152,13 +155,19 @@ Register Now </a>
             <div className="timeline-side" />
             <div className="timeline-marker" />
             <div className="timeline-card">
-              <p>8:00AM • Competition starts for pass 1 & pass 2</p>
+              <div className="timeline-content">
+                <strong>8:00 AM</strong>
+                <span>Competition starts for pass 1 & pass 2</span>
+              </div>
             </div>
           </div>
 
           <div className="timeline-row timeline-item-row left">
             <div className="timeline-card">
-              <p>1:00PM • 1st round submission & voting starts</p>
+              <div className="timeline-content">
+                <strong>1:00 PM</strong>
+                <span>1st round submission & voting starts</span>
+              </div>
             </div>
             <div className="timeline-marker" />
             <div className="timeline-side" />
@@ -168,7 +177,10 @@ Register Now </a>
             <div className="timeline-side" />
             <div className="timeline-marker" />
             <div className="timeline-card">
-              <p>2:30PM • Valedictory starts</p>
+              <div className="timeline-content">
+                <strong>2:30 PM</strong>
+                <span>Valedictory starts</span>
+              </div>
             </div>
           </div>
         </div>
