@@ -200,7 +200,7 @@ function Navbar() {
           </a>
 
           <a
-            href="https://q.me-qr.com/jmlr762q"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdCuOLkGm009WvSVem5CyNPh8PbniCZnAJv8BXdmm2Wg1PjjQ/viewform"
             target="_blank"
             rel="noopener noreferrer"
             style={{
