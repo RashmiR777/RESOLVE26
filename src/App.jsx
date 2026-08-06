@@ -148,13 +148,13 @@ Register Now </a>
             <div className="timeline-side" />
             <div className="timeline-marker" />
             <div className="timeline-card">
-              <p>8:00AM • Competition starts for both pass 1 and pass 2</p>
+              <p>8:00AM • Competition starts for pass 1 & pass 2</p>
             </div>
           </div>
 
           <div className="timeline-row timeline-item-row left">
             <div className="timeline-card">
-              <p>1:00PM • Final round submission and voting starts</p>
+              <p>1:00PM • 1st round submission & voting starts</p>
             </div>
             <div className="timeline-marker" />
             <div className="timeline-side" />
