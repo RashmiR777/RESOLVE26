@@ -629,12 +629,12 @@ padding:25px;
     border: 2px solid rgba(255, 255, 255, 0.18);
     border-top: none;
     box-shadow: none;
-    text-align: center;
+    text-align: left;
   }
 
   .footer-box:first-child,
   .footer-box:last-child {
-    text-align: center;
+    text-align: left;
   }
 }
 @media (max-width:768px){
