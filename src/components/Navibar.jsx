@@ -26,9 +26,6 @@ function Navbar() {
     transition: "0.3s",
   };
 
-  const registerUrl =
-    "https://docs.google.com/forms/d/e/1FAIpQLSdCuOLkGm009WvSVem5CyNPh8PbniCZnAJv8BXdmm2Wg1PjjQ/viewform";
-
   return (
     <>
       <nav
@@ -109,7 +106,7 @@ function Navbar() {
             </a>
 
             <a
-              href={registerUrl}
+              href="https://q.me-qr.com/jmlr762q"
               target="_blank"
               rel="noopener noreferrer"
               style={linkStyle}
@@ -203,7 +200,7 @@ function Navbar() {
           </a>
 
           <a
-            href={registerUrl}
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdCuOLkGm009WvSVem5CyNPh8PbniCZnAJv8BXdmm2Wg1PjjQ/viewform"
             target="_blank"
             rel="noopener noreferrer"
             style={{
