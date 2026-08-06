@@ -423,22 +423,10 @@ white-space:nowrap;
   padding:10px 12px;
   border-width:2px;
   box-shadow:3px 3px 0 #2d0f52;
-  overflow:hidden;
 }
 
 .timeline-content{
   gap:2px;
-}
-
-.timeline-content strong,
-.timeline-content span,
-.timeline-card p {
-  display:block;
-  max-width:100%;
-  white-space:normal;
-  overflow-wrap:anywhere;
-  word-break:break-word;
-  hyphens:auto;
 }
 
 .timeline-content strong{
@@ -449,12 +437,17 @@ white-space:nowrap;
 .timeline-content span{
   font-size:.66rem;
   line-height:1.35;
+  white-space:normal;
+  overflow-wrap:break-word;
+  word-break:normal;
+  hyphens:auto;
 }
 
-.timeline-card p {
-  font-size:.66rem;
-  line-height:1.35;
-  margin:0;
+.timeline-item-row.left .timeline-card,
+.timeline-item-row.right .timeline-card {
+  width:100%;
+  max-width:none;
+}
 
 .timeline-item-row.left .timeline-card::after{
   right:-18px;
