@@ -3,7 +3,11 @@ import "./App.css";
 import { Link } from "react-router-dom";
 import resolveLogo from "./assets/Resolve'26.png";
 import resolveposter from "./assets/resolve'26-poster.jpeg";
+
 function App() {
+  const registerUrl =
+    "https://docs.google.com/forms/d/e/1FAIpQLSdCuOLkGm009WvSVem5CyNPh8PbniCZnAJv8BXdmm2Wg1PjjQ/viewform";
+
   return (
     <>
       <Navbar />
@@ -29,7 +33,7 @@ function App() {
 
           <div className="hero-actions">
             {/*im going to comment this link to the website btw jsx comments are so weird*/}
-            <a className="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSdCuOLkGm009WvSVem5CyNPh8PbniCZnAJv8BXdmm2Wg1PjjQ/viewform" target="_blank" rel="noopener noreferrer">
+            <a className="btn btn-primary" href={registerUrl} target="_blank" rel="noopener noreferrer">
 Register Now </a>
 
             {/*<Link className="btn btn-primary" to="/register">
@@ -200,7 +204,7 @@ Register Now </a>
       <footer id="contact" className="footer">
   <h2>Ready to Join?</h2>
 {/*im going to comment this link to the website btw jsx comments are so weird*/}
-<a className="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSdCuOLkGm009WvSVem5CyNPh8PbniCZnAJv8BXdmm2Wg1PjjQ/viewform" target="_blank" rel="noopener noreferrer">
+<a className="btn btn-primary" href={registerUrl} target="_blank" rel="noopener noreferrer">
 Register Now </a>
 
   {/*<Link className="btn btn-primary" to="/register">
