@@ -412,7 +412,7 @@ white-space:nowrap;
 }
 
 .timeline-day-card span{
-  font-size:clamp(1rem, 4vw, 1.2rem);
+  font-size:clamp(0.95rem, 3vw, 1.1rem);
   line-height:1.02;
 }
 
@@ -443,7 +443,7 @@ white-space:nowrap;
 
 .timeline-content strong,
 .timeline-content span{
-  font-size: clamp(0.88rem, 2.4vw, 0.96rem);
+  font-size: clamp(0.82rem, 2.2vw, 0.92rem);
   line-height: 1.3;
 }
 
