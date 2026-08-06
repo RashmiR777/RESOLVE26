@@ -560,7 +560,6 @@ padding:25px;
 .footer-box {
   flex: 1;
   min-width: 220px;
-  text-align: left;
 }
 
 .footer-box:first-child {
@@ -568,7 +567,7 @@ padding:25px;
 }
 
 .footer-box:last-child {
-  text-align: left;
+  text-align: right;
 }
 
 .footer-box p {
